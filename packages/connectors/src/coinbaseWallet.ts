@@ -73,7 +73,7 @@ type Version4Parameters = Mutable<
      * @default 'all'
      */
     preference?: Preference['options'] | Compute<Preference> | undefined
-  }
+  } & Record<string, unknown>
 >
 
 function version4(parameters: Version4Parameters) {
